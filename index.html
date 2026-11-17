@@ -1465,17 +1465,35 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-img {
-  -webkit-tap-highlight-color: transparent;
+/* Remove text and image selection highlight */
+html,
+body,
+* {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none;
+}
+
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+img,
+svg,
+button,
+a,
+.envelope,
+.envelope * {
+  -webkit-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
 }
 
-a, button {
-  -webkit-tap-highlight-color: transparent;
+/* Remove default focus outline where appropriate */
+.envelope:focus,
+.envelope:focus-visible {
+  outline: none;
 }
-    
-  }
 </style>
 </head>
 <body>
