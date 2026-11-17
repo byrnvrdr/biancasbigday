@@ -2199,7 +2199,7 @@
     }
 
     /* 5. Live Countdown Timer (December 12, 2026 · 10:00 AM PHT) */
-    const eventTimestamp = new Date('2026-12-12T010:00:00+08:00').getTime();
+    const eventTimestamp = new Date('2026-12-12T10:00:00+08:00').getTime();
     function updateCountdown() {
       const diff = Math.max(0, eventTimestamp - Date.now());
       const parts = [
